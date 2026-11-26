@@ -29,6 +29,41 @@ The target protein is EGFR (ChEMBL ID: CHEMBL203). Experimental IC50 measurement
 5. Generate Morgan molecular fingerprints.
 6. Train Random Forest regression models.
 7. Evaluate model performance using R², RMSE and MAE.
+
+---
+
+## Model Visualisations
+
+### 1. Actual vs Predicted pIC50
+
+This plot compares the actual experimental pIC50 values with the values predicted by the Random Forest model.
+
+![Actual vs Predicted](results/actual_vs_predicted.png)
+
+### 2. Molecular Descriptor Feature Importance
+
+This visualisation highlights the molecular descriptors that contributed most to the RDKit-based Random Forest model.
+
+![Descriptor Importance](results/descriptor_importance.png)
+
+### 3. Residual Analysis
+
+The residual plot helps assess prediction errors and identify patterns in the model's deviations.
+
+![Residual Plot](results/residual_plot.png)
+
+---
+
+## Model Performance Summary
+
+The Morgan fingerprint model achieved the best performance among the two evaluated approaches.
+
+| Metric | RDKit Descriptors | Morgan Fingerprints |
+|---|---:|---:|
+| R² | 0.599 | 0.760 |
+| RMSE | 0.980 | 0.759 |
+| MAE | 0.779 | 0.576 |
+
 8. Compare both modelling approaches.
 
 ## Model Performance
