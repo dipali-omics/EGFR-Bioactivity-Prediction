@@ -30,6 +30,25 @@ The target protein is EGFR (ChEMBL ID: CHEMBL203). Experimental IC50 measurement
 6. Train Random Forest regression models.
 7. Evaluate model performance using R², RMSE and MAE.
 
+## Important scientific caveats
+
+
+## Model Performance
+
+Two Random Forest regression models were evaluated using a held-out test set.
+
+| Model | R² Score | RMSE | MAE |
+|---|---:|---:|---:|
+| RDKit Descriptors | 0.5993 | 0.9799 | 0.7789 |
+| Morgan Fingerprints | **0.7595** | **0.7591** | **0.5763** |
+
+### Key Findings
+
+- Morgan fingerprints achieved the best overall performance.
+- The Morgan fingerprint model produced lower RMSE and MAE.
+- Molecular fingerprints provided better predictive performance than the RDKit descriptor baseline in this experiment.
+
+*Note: These are baseline results from a held-out random test split, not external or scaffold-based validation.*
 ---
 
 ## Model Visualisations
