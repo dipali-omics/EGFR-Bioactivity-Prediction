@@ -1,0 +1,11 @@
+{
+  "target": "EGFR (CHEMBL203)",
+  "endpoint": "exact IC50 in nM",
+  "n_unique_compounds": 777,
+  "random_state": 42,
+  "test_size": 0.2,
+  "best_model_by_rmse": "Morgan fingerprints",
+  "best_model_r2": 0.7595470431722358,
+  "best_model_rmse": 0.7590888148199469,
+  "best_model_mae": 0.5762666507742836
+}
